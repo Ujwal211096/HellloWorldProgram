@@ -1,0 +1,98 @@
+mkdir
+cd
+ls -a
+git branch
+git status
+
+echo "hello" >>readme.txt
+git init
+git add readme.txt
+git commit -m "myCommit"
+git branch -M main
+git remote add origin https://github.com/SnehalPatil-15/ProjectName.git
+git push -u origin main
+git branch branchname (main)
+git switch branchname
+git merge branchname
+git config --global user.name ""
+git config --user.email
+
+
+
+
+
+
+
+
+Docker version
+docker --version
+
+
+Docker search
+docker search MySQL
+
+Docker pull
+docker pull --platform Linux/x86_64 MySQL
+
+Docker run
+docker run --env MYSQL_ROOT_PASSWORD=my-secret-pw --detach mysql
+
+Docker ps
+docker ps --all
+
+Docker stop
+docker stop f8c52bedeecc
+
+Docker restart
+greatlearning@greatlearning:/home/greatlearning$
+docker restart f8c52bedeecc
+
+Docker kill
+greatlearning@greatlearning:/home/greatlearning$
+docker kill 09ca6feb6efc
+To check whether the container is stopped or killed, use the following command -
+greatlearning@greatlearning:/home/greatlearning$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+Docker exec
+docker exec -it test_db bash
+mysql -uroot -pmy-secret-pw
+SHOW DATABASES;
+
+Docker login
+greatlearning@greatlearning:/home/greatlearning$ docker login
+Login with your Docker ID to push and pull images from Docker Hub. Suppose you don’t have a Docker ID, head over to https://hub.docker.com to create one.
+Username: greatlearning
+Password:
+Configure a credential helper to remove this warning. See: https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+Login Succeeded
+
+Docker commit
+greatlearning@greatlearning:/home/greatlearning$
+docker commit 09ca6feb6efc greatlearning/httpd_image
+sha256:d1933506f4c1686ab1a1ec601b1a03a17b41decbc21d8acd893db090a09bb31c
+Here, ‘greatlearning’ is the username and ‘httpd_image’ is the image name of the edited container.
+
+Docker push
+greatlearning@greatlearning:/home/greatlearning$ docker push greatlearning/httpd_image
+The push refers to the repository [docker.io/greatlearning/httpd_image]
+734d9104a6a2: Pushed
+635721fc6973: Mounted from library/httpd
+bea448567d6c: Mounted from library/httpd
+bfaa5f9c3b51: Mounted from library/httpd
+9d542ac296cc: Mounted from library/httpd
+d8a33133e477: Mounted from library/httpd
+latest:
+digest: sha256:3904662761df9d76ef04ddfa5cfab764b85e3eedaf10071cfbe2bf77254679ac size: 1574
+
+Docker network
+Docker history
+Docker rmi
+
+Docker ps -a
+docker ps -a
+
+Docker copy
+Docker logs  
+Docker volume
+Docker logout 
